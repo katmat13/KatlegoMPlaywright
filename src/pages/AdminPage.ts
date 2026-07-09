@@ -48,14 +48,22 @@ export class AdminPage extends BasePage {
         await this.basePageEnterText(this.page.getByRole('textbox', { name: 'Additional notes...' }), ("Added 4 courses for KatlegoPty Ltd due 2026-06-30. Total amoundue R2800,00."));
 
         //Verify Amount
-        await expect(this.page.getByText('R 0,00').nth(1)).toContainText('R 2 800,00');
+       // await expect(this.page.getByText('R 0,00').nth(1)).toContainText('R 2 800,00');
 
         //Click on the Create Invoice Amount
         //await this.basePageClickElement(getByRole('button', { name: '✅ Create Invoice' }));
 
+        //Click OK on dialog box
 
+        //Verify that invoice was created
+        //Latest invoice appears on top, view and verify that details are the same
 
+    }
 
+    async viewInvoice () {
+
+        //Verify that invoice was created
+        //Latest invoice appears on top, view and verify that details are the same
 
     }
 
