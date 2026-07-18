@@ -1,7 +1,7 @@
 import { test, expect } from '../src/fixtures/customFixtures';
 //import { validUsers } from '../src/data/testData';
 
-test.only('create invoice', async ({ loginPage, homePage, adminPage, page }) => {
+test('create invoice', async ({ loginPage, homePage, adminPage, page }) => {
 
     await loginPage.performFullLogin("testkat@gmail.co.za", "Test123."); //("admin@gmail.com","@12345678");
     await expect.soft(page).toHaveURL(/dashboard/);
