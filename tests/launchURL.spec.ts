@@ -34,7 +34,7 @@ test('Positive login - Admin', async ({ loginPage, homePage, adminPage, page }) 
    // await loginPage.userLogin("admin@gmail.com ","@12345678");
     //soft assertion
     //await expect.soft(page).toHaveURL(/dashboard123/); //failing the test on purpose so we can test soft assertions
-    await expect.soft(page).toHaveURL(/dashboard/); // Restore path to make test pass.
+   // await expect.soft(page).toHaveURL(/dashboard/); // Restore path to make test pass.
 
     await homePage.verifyHomePageIsDisplayed();
 

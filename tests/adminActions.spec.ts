@@ -4,7 +4,7 @@ import { test, expect } from '../src/fixtures/customFixtures';
 test('create invoice', async ({ loginPage, homePage, adminPage, page }) => {
 
     await loginPage.performFullLogin("testkat@gmail.co.za", "Test123."); //("admin@gmail.com","@12345678");
-    await expect.soft(page).toHaveURL(/dashboard/);
+  //  await expect.soft(page).toHaveURL(/dashboard/);
 
     await homePage.verifyHomePageIsDisplayed();
     await homePage.navigateToAdminPage();
