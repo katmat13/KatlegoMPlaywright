@@ -13,6 +13,7 @@ test.only('create invoice', async ({ loginPage, homePage, adminPage, page }) => 
 
     await adminPage.navigateToInvoices();
     await adminPage.createInvoice();
+    await adminPage.viewInvoice();
 
     await page.waitForTimeout(3000);
 
